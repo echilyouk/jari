@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
- <head> 
-  <title>자리뽑기 산들 1-3</title> 
+<head>
+  <title>산들 1-3</title>
   <style>
     body {
       display: flex;
@@ -27,13 +28,14 @@
     .card.clicked {
       background-color: white;
     }
-  </style> 
- </head> 
- <body> 
-  <label for="numCards">숫자 갯수:</label> 
-  <input type="number" id="numCards" min="1" value="1"> 
-  <button onclick="drawCards()">자리뽑기</button> 
-  <div id="cardContainer"></div> 
+  </style>
+</head>
+<body>
+  <label for="numCards">숫자:</label>
+  <input type="number" id="numCards" min="1" value="1">
+  <button onclick="drawCards()">자리뽑기</button>
+  <div id="cardContainer"></div>
+
   <script>
     var names = [
       "고은혜", "고현우", "권예솔", "김선우", "김승현", "김예인", "김혜중", "김태훈",
@@ -89,6 +91,6 @@
       cardElement.textContent = selectedName;
       cardElement.classList.add("clicked");
     }
-  </script> 
- </body>
+  </script>
+</body>
 </html>
